@@ -4,7 +4,7 @@ import { AiOutlineCloudUpload } from 'react-icons/ai'
 
 const Upload = () => {
   return <Container maxW={"container.xl"} h={"100vh"} p={'16'}>
-    <VStack color={'purple.500'}  justifyContent={'center'}w={['full','96']}>
+    <VStack color={'purple.500'} h={'full'} justifyContent={'center'}>
         <AiOutlineCloudUpload size={'10vmax'}/>
         <form action="">
             <HStack>
@@ -20,8 +20,9 @@ const Upload = () => {
                         cursor:'pointer'
                     },
                 }} />
-                <Button colorScheme={"purple"} type={"submit"}>Upload</Button>
+                
             </HStack>
+            <Button top={'3'}  marginLeft={'100'} colorScheme={"purple"} type={"submit"}>Upload</Button>
         </form>
     </VStack>
 
